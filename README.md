@@ -20,22 +20,22 @@ The contents of this `dotfiles-org` repository are expected to be on the same le
 
 ```sh
 .
-├── dotfiles-org
-├── <other directories>
-└── sample-project
+|-- dotfiles-org
+|-- <other directories>
+`-- sample-project
 ```
 
 ## Usage
 
 Clone this repository, preserving the original directory name:
 
-```
+```sh
 git clone git@github.com:operatehappy/dotfiles-org.git ./dotfiles-org
 ```
 
 ## Notes
 
-* The projects that consume this repository's contents (`dotfiles-org`) do not depend on a full Git history. That is to say: it is perfectly fine to make a shallow clone, using the `--depth=1` option.
+The projects that consume this repository's contents (`dotfiles-org`) do not depend on a full Git history. That is to say: it is perfectly fine to make a shallow clone, using the `--depth=1` option.
 
 ## Author Information
 
