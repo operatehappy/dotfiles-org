@@ -39,7 +39,7 @@ The projects that consume this repository's contents (`dotfiles-org`) do not dep
 
 ## Author Information
 
-This module is maintained by the contributors listed on [GitHub](https://github.com/operatehappy/terraform-aws-route53-workmail-records/graphs/contributors)
+This module is maintained by the contributors listed on [GitHub](https://github.com/operatehappy/dotfiles-org/graphs/contributors)
 
 Development of this module was sponsored by [Operate Happy](https://github.com/operatehappy).
 
