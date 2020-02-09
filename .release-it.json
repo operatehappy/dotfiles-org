@@ -25,8 +25,11 @@
 		"draft": true,
 		"tokenRef": "GITHUB_TOKEN_OPERATEHAPPY_BOT",
 		"assets": null,
-    "host": null,
-    "timeout": 0,
-    "proxy": null
+    	"host": null,
+    	"timeout": 0,
+    	"proxy": null
+	},
+	"npm": {
+		"publish": true
 	}
 }

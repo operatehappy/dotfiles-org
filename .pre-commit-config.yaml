@@ -1,25 +1,35 @@
 ---
 
 fail_fast: true
+minimum_pre_commit_version: "1.18"
+
 repos:
   -
     repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v2.3.0
+    rev: v2.5.0
     hooks:
       - id: check-added-large-files
       - id: check-case-conflict
       - id: check-merge-conflict
+      - id: check-executables-have-shebangs
       - id: check-json
+      - id: check-merge-conflict
+      - id: check-symlinks
+      - id: check-vcs-permalinks
+      - id: check-xml
       - id: check-yaml
       -
         id: detect-aws-credentials
         args: ["--allow-missing-credentials"]
       - id: check-vcs-permalinks
+      - id: detect-private-key
       - id: end-of-file-fixer
+      - id: forbid-new-submodules
+      - id: trailing-whitespace
 
   -
     repo: https://github.com/jumanjihouse/pre-commit-hooks
-    rev: 1.11.0
+    rev: 1.11.2
     hooks:
       - id: require-ascii
       -
@@ -32,7 +42,7 @@ repos:
 
   -
     repo: https://github.com/Lucas-C/pre-commit-hooks-go
-    rev: v1.0.0
+    rev: v1.0.1
     hooks:
       - id: checkmake
   -
@@ -48,6 +58,12 @@ repos:
 
   -
     repo: https://github.com/antonbabenko/pre-commit-terraform
-    rev: v1.19.0
+    rev: v1.25.0
     hooks:
       - id: terraform_fmt
+
+  -
+    repo: https://github.com/operatehappy/pre-commit-hooks
+    sha: 8d93ed1
+    hooks:
+      - id: standard
