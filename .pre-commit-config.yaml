@@ -36,7 +36,6 @@ repos:
         id: shellcheck
         args: [
           "--color=auto",
-          "--norc",
           "--external-sources"
         ]
 
