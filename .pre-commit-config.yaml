@@ -63,7 +63,7 @@ repos:
 
   -
     repo: https://github.com/operatehappy/pre-commit-hooks
-    rev: master
+    rev: 1.0.0
     hooks:
       - id: standard
 #      - id: snyk-test
