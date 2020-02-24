@@ -4,7 +4,8 @@
 	"non-interactive": false,
 	"verbose": true,
 	"changelogCommand": "git log --pretty=format:'* %s (%h)' [REV_RANGE]",
-	"git": {
+  	"disableMetrics": true,
+  	"git": {
 		"requireCleanWorkingDir": true,
 		"requireUpstream": true,
 		"requireCommits": true,
