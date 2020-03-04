@@ -38,6 +38,17 @@ repos:
           "--color=auto",
           "--external-sources"
         ]
+      -
+        id: shfmt
+        args: [
+          '-l',
+          '-w',
+          '-d',
+          '-s',
+          '-i 2',
+          '-ci',
+          '-sr'
+        ]
 
   -
     repo: https://github.com/Lucas-C/pre-commit-hooks-go
@@ -61,7 +72,7 @@ repos:
 
   -
     repo: https://github.com/antonbabenko/pre-commit-terraform
-    rev: v1.26.0
+    rev: v1.27.0
     hooks:
       - id: terraform_fmt
 
