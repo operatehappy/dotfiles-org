@@ -38,17 +38,17 @@ repos:
           "--color=auto",
           "--external-sources"
         ]
-      -
-        id: shfmt
-        args: [
-          '-l',
-          '-w',
-          '-d',
-          '-s',
-          '-i 2',
-          '-ci',
-          '-sr'
-        ]
+#       -
+#         id: shfmt
+#         args: [
+#           '-l',
+#           '-w',
+#           '-d',
+#           '-s',
+#           '-i 2',
+#           '-ci',
+#           '-sr'
+#         ]
 
   -
     repo: https://github.com/Lucas-C/pre-commit-hooks-go
