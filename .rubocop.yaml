@@ -1,0 +1,146 @@
+# based on https://github.com/Homebrew/brew/blob/d5a785374e7c4ef4605fea31537a497e9db6bf5f/Library/.rubocop.yml
+# and https://github.com/Homebrew/brew/blob/d5a785374e7c4ef4605fea31537a497e9db6bf5f/Library/.rubocop_shared.yml
+
+AllCops:
+  TargetRubyVersion: 2.5
+  DisplayCopNames: true
+  Exclude:
+    - helpers/templates/consul.formula.rb
+    - helpers/templates/nomad.formula.rb
+    - helpers/templates/sentinel.formula.rb
+    - helpers/templates/vagrant.cask.rb
+    - helpers/templates/vault.formula.rb
+
+#Layout/HashAlignment:
+#  Enabled: false
+
+Layout/CaseIndentation:
+  EnforcedStyle: end
+
+Layout/EndAlignment:
+  EnforcedStyleAlignWith: start_of_line
+
+Layout/LineLength:
+  Max: 167
+  IgnoredPatterns: ['#: ', ' url "', ' mirror "', ' plist_options :']
+
+Layout/RescueEnsureAlignment:
+  Enabled: false
+
+Layout/SpaceAroundOperators:
+  Enabled: false
+
+Lint/AmbiguousBlockAssociation:
+  Enabled: false
+
+Lint/AmbiguousOperator:
+  Enabled: false
+
+Lint/AmbiguousRegexpLiteral:
+  Enabled: false
+
+Lint/AssignmentInCondition:
+  Enabled: false
+
+Lint/InterpolationCheck:
+  Enabled: false
+
+Lint/ParenthesesAsGroupedExpression:
+  Enabled: false
+
+Metrics/AbcSize:
+  Enabled: false
+
+Metrics/BlockLength:
+  Enabled: false
+
+Metrics/ClassLength:
+  Enabled: false
+
+Metrics/CyclomaticComplexity:
+  Enabled: false
+
+Metrics/MethodLength:
+  Enabled: false
+
+Metrics/ModuleLength:
+  Enabled: false
+
+Metrics/ParameterLists:
+  CountKeywordArgs: false
+
+Metrics/PerceivedComplexity:
+  Enabled: false
+
+Naming/HeredocDelimiterNaming:
+  Enabled: false
+
+Naming/VariableNumber:
+  Enabled: false
+
+Style/AutoResourceCleanup:
+  Enabled: true
+
+Style/BarePercentLiterals:
+  EnforcedStyle: percent_q
+
+Style/CollectionMethods:
+  Enabled: true
+
+Style/ConditionalAssignment:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+
+Style/FormatStringToken:
+  EnforcedStyle: annotated
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Style/GuardClause:
+  Enabled: false
+
+Style/IfUnlessModifier:
+  Enabled: false
+
+Style/NumericLiteralPrefix:
+  EnforcedOctalStyle: zero_only
+
+Style/NumericLiterals:
+  MinDigits: 7
+  Strict: true
+
+Style/RescueStandardError:
+  EnforcedStyle: implicit
+
+Style/ReturnNil:
+  Enabled: true
+
+Style/StderrPuts:
+  Enabled: false
+
+Style/StringLiterals:
+  EnforcedStyle: double_quotes
+
+Style/StringLiteralsInInterpolation:
+  EnforcedStyle: double_quotes
+
+Style/StringMethods:
+  Enabled: true
+
+Style/SymbolArray:
+  EnforcedStyle: brackets
+
+Style/TernaryParentheses:
+  EnforcedStyle: require_parentheses_when_complex
+
+Style/TrailingBodyOnMethodDefinition:
+  Enabled: false
+
+Style/TrailingCommaInArguments:
+  EnforcedStyleForMultiline: comma
+
+Style/WordArray:
+  MinSize: 4
