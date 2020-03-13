@@ -38,18 +38,7 @@ repos:
           "--except='Naming/FileName'",
           "--config=../dotfiles-org/.rubocop-casks.yaml",
           "--fail-fast",
-          "--extra-details",
-          "--display-style-guide",
-        ]
-      -
-        id: rubocop
-        name: Check Homebrew Formula style with rubocop
-        args: [
-          "--except='Naming/FileName'",
-          "--config=../dotfiles-org/.rubocop-formula.yaml",
-          "--fail-fast",
-          "--extra-details",
-          "--display-style-guide",
+          "--extra-details"
         ]
       -
         id: shellcheck
