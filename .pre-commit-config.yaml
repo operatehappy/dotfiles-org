@@ -32,15 +32,6 @@ repos:
     hooks:
       - id: require-ascii
       -
-        id: rubocop
-        name: Check Homebrew Cask style with rubocop
-        args: [
-          "--except='Naming/FileName'",
-          "--config=../dotfiles-org/.rubocop-casks.yaml",
-          "--fail-fast",
-          "--extra-details"
-        ]
-      -
         id: shellcheck
         args: [
           "--color=auto",
